@@ -1,0 +1,15 @@
+CREATE TABLE psychologists (
+    id UUID PRIMARY KEY,
+
+    firebase_uid VARCHAR(255) NOT NULL UNIQUE,
+
+    name VARCHAR(255) NOT NULL,
+
+    email VARCHAR(255) NOT NULL,
+
+    specialty VARCHAR(255) NOT NULL,
+
+    active BOOLEAN NOT NULL DEFAULT TRUE,
+
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
